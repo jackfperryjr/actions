@@ -21,9 +21,9 @@ jobs:
     needs: [upload]
     steps:
     - name: download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: sample
-          path: './sample'
+      uses: actions/download-artifact@v2
+      with:
+        name: sample
+        path: './sample'
     - name: read file
         run: cat sample.txt
