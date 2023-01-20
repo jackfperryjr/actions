@@ -9,12 +9,12 @@ jobs:
     environment: test
     steps:
     - name: step 1
-      run: echo "sample text" >> ./sample/sample.txt
+      run: echo "sample text" >> sample.txt
     - name: upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: sample
-        path: './sample'
+        path: './'
   download:
     runs-on: ubuntu-latest
     environment: test
