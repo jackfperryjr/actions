@@ -9,7 +9,7 @@ jobs:
     environment: PREPARE
     steps:
     - name: Create File
-      run: echo "This is just some sample test added to a simple .txt file; Hello, world." >> sample.txt
+      run: echo "Hello, world." >> sample.txt
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
