@@ -17,7 +17,7 @@ jobs:
         path: './'
   download:
     runs-on: ubuntu-latest
-    environment: test
+    environment: release
     needs: [upload]
     steps:
     - name: download artifact
