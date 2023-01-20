@@ -26,4 +26,4 @@ jobs:
         name: sample
         path: './sample'
     - name: read file
-      run: cat sample.txt
+      run: cat ./sample/sample.txt
